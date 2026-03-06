@@ -69,7 +69,7 @@
         <div class="campo-grupo">
           <div class="campo">
             <label for="logradouro">LOGRADOURO</label>
-            <input type="text" id="logradouro" name="logradouro" required>
+            <input type="text" id="logradouro" name="logradouro" readonly>
           </div>
           <div class="campo">
             <label for="numero">NÚMERO</label>
@@ -84,22 +84,22 @@
           </div>
           <div class="campo">
             <label for="bairro">BAIRRO</label>
-            <input type="text" id="bairro" name="bairro">
+            <input type="text" id="bairro" name="bairro" readonly>
           </div>
         </div>
   
         <div class="campo-grupo" id="div-3column">
           <div class="campo">
             <label for="cidade">CIDADE</label>
-            <input type="text" id="cidade" name="cidade">
+            <input type="text" id="cidade" name="cidade" readonly>
           </div>
           <div class="campo">
             <label for="estado">ESTADO</label>
-            <input type="text" id="estado" name="estado">
+            <input type="text" id="estado" name="estado" readonly>
           </div>
           <div class="campo">
             <label for="cod_ibge">CÓDIGO IBGE</label>
-            <input type="text" id="cod_ibge" name="cod_ibge">
+            <input type="text" id="cod_ibge" name="cod_ibge" readonly>
           </div>
         </div>
 
@@ -120,6 +120,22 @@
                 <option value="4ano">4º ano</option>
                 <option value="5ano">5º ano</option>
               </select>
+
+              <div class="bloco-segunda-lingua" id="bloco-segunda-lingua">
+                <p>Segunda Língua</p>
+  
+                <div class="opcao-lingua">
+                  <input type="radio" id="lingua_ingles" name="segunda-lingua" value="ingles">
+                  <span class="flag">US</span>
+                  <label for="lingua_ingles">Inglês</label>
+                </div>
+  
+                <div class="opcao-lingua">
+                  <input type="radio" id="lingua_espanhol" name="segunda-lingua" value="espanhol">
+                  <span class="flag">ES</span>
+                  <label for="lingua_espanhol">Espanhol</label>
+                </div>
+              </div>
             </td>
   
             <td>
@@ -128,6 +144,12 @@
               <label for="manha">Manhã</label><br>
               <input type="radio" name="turno" id="tarde" value="tarde">
               <label for="tarde">Tarde</label>
+
+              <div id="bloco-telefone-tarde">
+                <p>📞 Telefone de Contato para o Turno da Tarde</p>
+                <input type="text" id="telefone_tarde" name="telefone_tarde" placeholder="(61) 9 9999-9999">
+              </div>
+
             </td>
   
             <td>
